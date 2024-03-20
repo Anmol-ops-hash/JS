@@ -31,3 +31,26 @@ const myfunction = function(){
 }
 
 console.log(typeof bigNumber);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//  Stack(premitive)copy, Heap(Non-Premitive) original
+
+let myYotubename = "anmoldotcom"
+let anothername = myYotubename
+anothername = "code"
+
+console.log(myYotubename);
+console.log(anothername);
+
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "anmol@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
