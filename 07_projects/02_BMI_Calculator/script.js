@@ -19,6 +19,14 @@ form.addEventListener('submit', (e) => {
     const bmi=(weight/ ((height*height)/10000)).toFixed(2)
     //show the result
     results.innerHTML=`<span>${bmi}</span>`
+    const guid = document.querySelector('#weight-guide');
+    if (bmi < 18.6) {
+      guid.children[1].style.color = 'orange';
+    } else if (bmi > 24.9) {
+      guid.children[3].style.color = 'red';
+    } else {
+      guid.children[2].style.color = 'green';
+    }
     
   }
 });
