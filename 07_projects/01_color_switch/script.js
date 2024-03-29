@@ -27,3 +27,12 @@ buttons.forEach( (button)=>{
      }
    })
 })
+
+// solution 2
+/*
+    button.forEach(function(button){
+    button.addEventListener('click', function(e){
+    body.style.backgroundColor = e.target.id
+  })
+})
+*/
